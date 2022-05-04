@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estilo.css">
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     <title>Registro</title>
+  
+  <title>Proyecto civil</title>
+
+  
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">  <!-- estructura de la pagina Web -->
+        <!-- Navbar content -->
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="col col-lg-2">
+            <a href="Index.html"><img src="Imagenes/logo.png" width="50%" height="50%" ></a>  
+    
+          </div>
+              <div class="col-md-auto">
+                <a class="btn btn-warning ;" href="Pagina_principal.html" role="button">Inicio</a>       
+                <a class="btn btn-warning ;" href="Contacto.html" role="button">Contacto</a>
+              </div>
+              <div class="col col-lg-2">
+              </div>
+            </div>         
+     
+        </nav>
+
+  <section class="form-register">
+    <h4> Ingresa tus datos personales </h4>
+    
+    <input class="controls" type="text" name="nombre 1" id="nombre1" placeholder="Ingrese primer nombre">
+    <input class="controls" type="text" name="nombre 2" id="nombre2" placeholder="Ingrese segundo nombre">
+    <input class="controls" type="text" name="apellido1" id="apellido1" placeholder="Ingrese  primer apellido">
+    <input class="controls" type="text" name="apellido2" id="apellido2" placeholder="Ingrese segundo apellido">    
+    <input class="controls" type="text" name="celular" id="celular" placeholder="Ingrese celular">
+    <input class="controls" type="text" name="correo" id="correo" placeholder="Ingrese correo electronico"> 
+    <input class="controls" type="text" name="nomcedula" id="cedula" placeholder="Ingrese  cédula">   
+    <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese  dirección">
+    <input class="controls" type="text" name="apartamento" id="apartamento" placeholder="Ingrese el número de vivienda">
+    <input class="controls" type="text" name="departamento" id="departamento" placeholder="Ingrese el departamento donde vive">
+    
+   
+    <label for="inputCiudadLine2" class="control-label">Ciudad</label>
+    <select class="form-control" id="inputCiudadLine2">
+        <option value="">-</option>
+        <option value="Arauca">Arauca</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Barranquilla">Barranquilla</option>
+        <option value="Bogotá">Bogotá</option>
+        <option value="Bucaramanga">Bucaramanga</option>
+        <option value="Cali">Cali</option>
+        <option value="Cartagena">Cartagena</option>
+        <option value="Cúcuta">Cúcuta</option>
+        <option value="Florencia">Florencia</option>
+        <option value="Ibagué">Ibagué</option>
+        <option value="Leticia">Leticia</option>
+        <option value="Manizales">Manizales</option>
+        <option value="Medellín">Medellín</option>
+        <option value="Mitú">Mitú</option>
+        <option value="Mocoa">Mocoa</option>
+        <option value="Montería">Montería</option>
+        <option value="Neiva">Neiva</option>
+        <option value="Pasto">Pasto</option>
+        <option value="Pereira">Pereira</option>
+        <option value="Popayán">Popayán</option>
+        <option value="Puerto Carreño">Puerto Carreño</option>
+        <option value="Puerto Inírida">Puerto Inírida</option>
+        <option value="Quibdó">Quibdó</option>
+        <option value="Riohacha">Riohacha</option>
+        <option value="San Andrés">San Andrés</option>
+        <option value="San José del Guaviare">San José del Guaviare</option>
+        <option value="Santa Marta">Santa Marta</option>
+        <option value="Sincelejo">Sincelejo</option>
+        <option value="Tunja">Tunja</option>
+        <option value="Valledupar">Valledupar</option>
+        <option value="Villavicencio">Villavicencio</option>
+        <option value="Yopal">Yopal</option>
+    </select>
+   <h1>
+
+   </h1>
+   
+    <input class="controls" type="text" name="barrio" id="barrio" placeholder="Ingrese el barrio donde vive"><br><br>
+
+    <input type="checkbox" name="terms" onclick="enableSending()" <p>  Acepto terminos y condiciones </p>  <br><br>
+    <center> <a class="btn btn-warning ;" href="Encuesta_general.html" role="button">Siguiente</a>  <a class="btn btn-warning ;" href="Pagina_principal.html" role="button">Atras</a> </center>
+     
+    
+   
+    
+  </section>
+
+</body>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";//incluir el database 
+
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBT0Nja6ejfinJ3MlTbqt4VUaM1lNpdvgk",
+    authDomain: "bded-desarrollo-web.firebaseapp.com",
+    databaseURL: "https://bded-desarrollo-web-default-rtdb.firebaseio.com",
+    projectId: "bded-desarrollo-web",
+    storageBucket: "bded-desarrollo-web.appspot.com",
+    messagingSenderId: "133681905957",
+    appId: "1:133681905957:web:c5688b85c98b56305e9acc",
+    measurementId: "G-MQNB3TNGVQ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<script src="./operacion.js">
+</script>
+</html>

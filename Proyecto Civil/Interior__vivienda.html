@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estilo.css">
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     <title>Registro</title>
+  
+  <title>Proyecto civil</title>
+
+  
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">  <!-- estructura de la pagina Web -->
+        <!-- Navbar content -->
+       
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="col col-lg-2">
+            <a href="Index.html"><img src="Imagenes/logo.png" width="50%" height="50%" ></a>  
+    
+          </div>
+              <div class="col-md-auto">
+                <a class="btn btn-warning ;" href="Pagina_principal.html" role="button">Inicio</a>    
+                <a class="btn btn-warning ;" href="Contacto.html" role="button">Contacto</a>
+              </div>
+              <div class="col col-lg-2">
+              </div>
+            </div>         
+     
+        </nav>
+
+ 
+
+  <section class="form-register">
+    <h4>  </h4>
+    
+    <h1> Interior De La Vivienda </h1>
+    <p> Las siguientes preguntas se deberán realizar en el interior de la vivienda para poder observar las características de las preguntas</p> 
+    <br>
+    <p>  Altura entre pisos (Distancia entre el piso y el techo) </p>
+    <form>
+        <input type="radio" name="Distancia">2 Metros<br>
+        <input type="radio" name="Distancia">2.1 a 2.5 Metros<br>
+        <input type="radio" name="Distancia">2.6 a 3 Metros<br>        
+        <input type="radio" name="Distancia">Mas de 3 metros
+    </form>
+    <br><br>
+    <p>  Material de construcción </p>
+    <form>
+        <input type="radio" name="material"> Mamopstería (construccion compuesta por ladrillos u otro material) <br>
+        <img src="Mamposteria.png"><br><br>
+        <p>  Tipo de mampostería </p>
+    <form>
+        <input type="radio" name="mampostería"> Reforzada (contiene acero al interior de la estructura) <br>
+        <img src="Mamposteria reforzada.png"><br><br>
+        <input type="radio" name="mampostería"> No reforzada (No contiene hierro al interior de la estructura, solo sería el adobe) <br>
+        <input type="radio" name="mampostería"> Confinada (Muro el cual está encerrado alrededor por vigas y columnas) <br>
+        <img src="Mamposteria confinada.png">
+    </form><br><br><br>
+
+
+
+        <input type="radio" name="material"> Concreto reforzado (construcción compuesta por concreto y acero) <br>
+        <img src="Concreto reforzado.png"><br><br>
+        <p>  Tipo de concreto  </p>
+    <form>
+        <input type="radio" name="concreto"> Muro estructural (muro el cual no se puede quitar ni modificar, ya que son muros que soportan la carga de la vivienda.) <br>
+        <input type="radio" name="concreto"> Pórtico<br>
+        <img src="Sistema en portico.png"><br>
+        <input type="radio" name="concreto"> Sistema dual o combinado. (muros estructurales y pórticos (compuestos por vigas y columnas) <br>
+        <input type="radio" name="concreto"> Prefabricado (construcción por secciones o módulos que fueron diseñadas con antelación por fuera de la construcción) <br>
+        <img src="Prefabricado.png">
+    </form>
+    <br><br><br><br>
+
+
+
+        <input type="radio" name="material"> Prefabricado (construcción por secciones o módulos que fueron diseñadas con antelación por fuera de la construcción) <br>
+    <form>
+        <p>  Tipo ed material prefabricado </p>
+        <input type="radio" name="Prefabricado"> Yeso <br>
+        <img src="Yeso.png"><br><br>
+        <input type="radio" name="Prefabricado"> Madera <br>
+        <img src="Madera.png"><br><br>
+        <input type="radio" name="Prefabricado"> PVS <br>
+        <img src="PVC.png"><br><br>
+        <input type="radio" name="Prefabricado"> Drywall <br>
+        <img src="Drywall.png"><br><br>
+        <input type="radio" name="Prefabricado"> Fibrocemento <br>
+        <img src="Fibrocemento.png"><br><br>
+        <input class="controls" type="text" name="nombre 1" id="nombre1" placeholder="Otra">
+    </form>
+    <br><br><br><br>
+    
+
+        <input type="radio" name="material"> Acero <br>
+        <input type="radio" name="material"> Madera <br>
+        <input type="radio" name="material"> Adobe <br>
+        <input type="radio" name="material"> Tapia (es un método de construcción que consiste en elaborar muros con tierra arcillosa húmeda, compactada a golpes con un pisón rellenando un encofrado con diferentes capas.) <br>
+        <img src="Tapia.png"><br><br>
+        <input type="radio" name="material"> Guadua <br>
+        <input class="controls" type="text" name="nombre 1" id="nombre1" placeholder="Otra">
+    </form>   
+    <br><br> 
+    
+    
+    
+    <p>  Como se encuentra construido el piso ded la vivienda </p>
+    <form>
+        <input type="radio" name="suelo"> Losa de concreto aligerado. (conformada por concreto armado, estas se evidencian ya que forman una especie de cajón en el techo.) <br>
+        <img src="Losa de concreto aligerado.png"><br><br>
+        <input type="radio" name="suelo"> Losa de concreto maciza. (conformada por concreto y acero) <br>
+        <img src="Losa de concreto maciza.png"><br><br>
+        <input type="radio" name="suelo"> Vigas de madera <br>
+        <img src="Viga ded madera.png"><br><br>
+        <input type="radio" name="suelo"> Vigas de acero <br>
+        <img src="Viga de acero.png"><br><br>
+    </form>
+    <br><br>
+    <p> Tipo ded techo o cubierta </p>
+    <form>
+        <input type="radio" name="techo"> Losa de concreto aligerada. (conformada por concreto armado, estas se evidencian ya que forman una especie de cajón en el techo.) <br>
+        <img src="Losa de concreto aligerado.png"><br><br>
+        <input type="radio" name="techo"> Losa de concreto maciza. (conformada por concreto y acero) <br>
+        <img src="Losa de concreto maciza.png"><br><br>
+        <input type="radio" name="techo"> Zinc  <br>
+        <img src="Teja en zinc.png"><br><br>
+        <input type="radio" name="techo"> Termina en plancha <br>
+        <img src="Termina en plancha.png"><br><br>
+    </form> <br><br><br><br>
+    
+    <p>  Estado de daño de la edificacion </p>
+    <form>
+        <P> La edificación presenta asentamientos (Hundimientos) </P>
+        <input type="radio" name="año"> Si <br>
+        <input type="radio" name="año"> No
+    </form>
+    <br><br>
+    <p>  Estado de daño de la edificacion </p>
+    <form>
+        <label> Lejana al hundimiento horizontal </label>
+        <input type="file"><br><br>
+        <label> Cercana con algún objeto con el que se pueda dimensionar. (ejemplo: un lápiz o cuaderno al lado del hundimiento) </label>
+        <input type="file">
+    </form>
+    <br><br><br>
+    <p>  Estado de daño de la edificacion </p>
+    <br>
+    <form>
+        <label> Lejana a la grieta </label>
+        <input type="file"><br><br><br>
+        <label> Cercana con algún objeto con el que se pueda dimensionar. (ejemplo: un lápiz o cuaderno al lado de la grieta) </label>
+        <input type="file">
+    </form>
+
+</script>
+<script src="./operacion.js">
+</script>
+</html><br><br><br>
+<a class="btn btn-warning ;" href="Interior__vivienda.html" role="button">Guargar</a> <a class="btn btn-warning ;" href="Extrrior_vivienda.html" role="button">Atras</a>
